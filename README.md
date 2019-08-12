@@ -65,7 +65,9 @@ Then you need to create keys:
 
 Edit `Api/Core/ApiConfig.php/` and find `const OAUTH2_ENCRYPTION_KEY` and update its value using a `base64_encode(random_bytes(32))`.
 
+## 4.- Php example for creating a bean module of accounts with personalized data.
 
+Code files located in testing folder.
 
 
 
