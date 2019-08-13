@@ -4,10 +4,12 @@ if (!defined('sugarEntry') || !sugarEntry) {
    die('Not A Valid Entry Point');
 }
 require_once(__DIR__ . '/test_php_beans.php');
-
-$token_url = 'https://vidsigner2.btactic.net/Api/access_token';
-$module_url = 'https://vidsigner2.btactic.net/Api/V8/module/';
+//The initial URL needs to be cahged to the one in your server, the "suitecrm.example.net" is just a placeholder.
+$token_url = 'https://suitecrm.example.net/Api/access_token';
+$module_url = 'https://suitecrm.example.net/Api/V8/module/';
+//This must be changed to the token generated in the CRM with the other steps.
 $client_id = '93af01c4-96ab-e088-5b9e-5d4d4bad0a5a';
+//This secret must be the same as the one generated in the other steps.
 $client_secret = '';
 $ch = curl_init();
 $header = array(
@@ -38,12 +40,13 @@ $header = array(
     'Content-type: application/vnd.api+json'
 
 );
+//This information is only a placeholder for the information found in an Account bean, it must be change to watever you desire, or variables if needed
 $postStr2 = json_encode(array(
-    'id' => create_bean_account('Dani', 'daniel.bellet@btactic.com', '637070854'),
+    'id' => create_bean_account('Dani', 'daniel.bellet@gmail.com', '647070854'),
     'name' => 'Dani',
     'email' => array(
         array(
-            'email_address' => 'daniel.bellet@btactic.com',
+            'email_address' => 'daniel.bellet@gmail.com',
             'primary_address' => true
         )
     ),
