@@ -4,7 +4,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
    die('Not A Valid Entry Point');
 }
 require_once(__DIR__ . '/test_php_beans.php');
-//The initial URL needs to be cahged to the one in your server, the "suitecrm.example.net" is just a placeholder.
+//The initial URL needs to be changed to the one in your server, the "suitecrm.example.net" is just a placeholder.
 $token_url = 'https://suitecrm.example.net/Api/access_token';
 $module_url = 'https://suitecrm.example.net/Api/V8/module/';
 //This must be changed to the token generated in the CRM with the other steps.
