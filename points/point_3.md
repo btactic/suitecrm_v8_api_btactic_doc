@@ -22,28 +22,26 @@ Also you need to install composer packages:
 
 SuiteCRM Api uses OAuth2 protocol, which needs public and private keys.
 
-First, open a terminal and go to {{your-SuiteCRM-root}}/Api/V8/OAuth2
+1. First, open a terminal and go to {{your-SuiteCRM-root}}/Api/V8/OAuth2
 
-Generate a private key:
+2. Generate a private key:
 
-`openssl genrsa -out private.key 2048`
-
-
-
-Then a public key:
-
-`openssl rsa -in private.key -pubout -out public.key`
+   `openssl genrsa -out private.key 2048`
 
 
-If you need more information about generating, please visit this page.
 
-The permission of the key files must be 600 or 660, so change it.
+3. Then a public key:
 
-`sudo chmod 600 private.key public.key`
+   `openssl rsa -in private.key -pubout -out public.key`
 
-Also, you have to be sure that the config files are owned by PHP.
 
-`sudo chown www-data:www-data p*.key`
+4. The permission of the key files must be 600 or 660, so change it.
 
-Edit `Api/Core/ApiConfig.php/` and find `const OAUTH2_ENCRYPTION_KEY` and update its value using a `base64_encode(random_bytes(32))`.
+   `sudo chmod 600 private.key public.key`
+
+5. Also, you have to be sure that the config files are owned by PHP.
+
+   `sudo chown www-data:www-data p*.key`
+
+6. Edit `Api/Core/ApiConfig.php/` and find `const OAUTH2_ENCRYPTION_KEY` and update its value using a `base64_encode(random_bytes(32))`.
  
