@@ -42,11 +42,11 @@ $header = array(
 );
 //This information is only a placeholder for the information found in an Account bean, it must be change to watever you desire, or variables if needed
 $postStr2 = json_encode(array(
-    'id' => create_bean_account('Dani', 'daniel.bellet@gmail.com', '647070854'),
-    'name' => 'Dani',
+    'id' => create_bean_account('John', 'john.smith@example.com', '666777888'),
+    'name' => 'John Smith',
     'email' => array(
         array(
-            'email_address' => 'daniel.bellet@gmail.com',
+            'email_address' => 'john.smith@example.com',
             'primary_address' => true
         )
     ),
