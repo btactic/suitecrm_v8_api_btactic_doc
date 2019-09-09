@@ -13,3 +13,9 @@ This option let us associated the oauth client to a suitecrm user so that we can
 * Is confidential: Yes
 * Associated user: apiclient1
 
+Once the oauthclient1 oauth client is created you should write down:
+
+* Its ID (e.g. 1d3e8a32-3caf-99f7-b9f9-5d764c8f813b) which it's shown after creating it.
+* Its secret (what you just typed in the 'Change secret' field).
+
+you will need both of those fields later.
