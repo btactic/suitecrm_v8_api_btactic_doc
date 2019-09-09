@@ -33,5 +33,3 @@ Assign the role to our newly created user.
 You just need to open the user and add the new role to its roles subpanel.
 
 ![Point 2 4](../images/Point_2_4.png)
-
-If needed, you can create a security group that has this new role assigned to it.
