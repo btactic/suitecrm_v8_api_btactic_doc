@@ -6,7 +6,7 @@
 
 This option let us associated the oauth client to a suitecrm user so that we can inherit the suitecrm user permissions.
 
-![Client_Credential](https://github.com/btactic/suitecrm_v8_api_btactic_doc/blob/master/images/Point_1_2.png)
+![Client_Credential](../images/Point_1_2.png)
 
 * Name: oauthclient1
 * Change secret: Eefaereer7ah
