@@ -1,4 +1,4 @@
- 1. [Configure accounts-only create permissions for the user](docs/create_restricted_suitecrm_user.md)
+ 1. [Configure accounts-only create permissions for the user](docs/create_restricted_suitecrm_user_edit.md)
 
  1. [Configure authentication. Obtaining a session and chosing grant types in V8 api suitecrm](docs/create_oauth_client.md)
 
@@ -9,7 +9,8 @@
 While testing the API if you get messages like:
 ```
 No input file specified
+Missing authorization header
 ```
-you should check:
+or any other problem you should check:
 
  1. [Htaccess update (optional)](docs/optional_htaccess_update.md)
