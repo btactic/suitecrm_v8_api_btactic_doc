@@ -4,7 +4,7 @@
 
  1. [Api requirements](docs/api_requirements.md)
 
- 1. [Obtain all beans from a module - Php example](docs/obtain_account_beans_from_api.md)
+ 1. [Obtain all beans from a module - Php example](docs/read_account_beans_from_api.md)
 
 While testing the API if you get messages like:
 ```
