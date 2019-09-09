@@ -1,21 +1,19 @@
-How to configure the user to only have permissions to create only objects from the accounts module.
+How to configure the user to only have permissions to create objects from the accounts module.
 
-<h3> Steps to follow in order to limit a user to only create accounts: </h3>
-
-1. As an admin, create the user that will have the accounts limitation.
+As an admin, create the user that will have the accounts limitation.
 
 ![Point 2 1](../images/Point_2_1.png)
 
-2. As an admin, create the role that will have the permitions.
+As an admin, create the role that will have the permitions.
 
 ![Point 2 2](../images/Point_2_2.png)
 
-3. In the following screens after the creation of the role, you will have to select that every option to be "Disabled" or "None", except for the Access option in the Accounts, which should be "Enabled" module and the Edit option in the same module, which should be "All".
+In the next screens after the creation of the role, you will have to toggle every option to be "Disabled" or "None", except for the Access option for Accounts, which should be "Enabled" module and the Edit option in the same module, which should be "All".
 
 ![Point 2 3](../images/Point_2_3.png)
 
-4. Assign the role to the user in question.
+Assign the role to our newly created user.
 
 ![Point 2 4](../images/Point_2_4.png)
 
-5. If needed, you can create a security group that has said role assigned to it. 
+If needed, you can create a security group that has this new role assigned to it.
