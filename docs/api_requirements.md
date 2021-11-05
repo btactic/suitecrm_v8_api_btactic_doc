@@ -43,8 +43,10 @@ Make also sure that the config files are owned by PHP.
 
    `sudo chown www-data:www-data p*.key`
 
-Generate a random key.
+Finally make sure that the setting `oauth2_encryption_key` is properly set in your config.php file. It should be autofilled in the installation.
+
+If you ever have to generate a random key for this setting you can use the following command:
 
 `php -r 'echo (base64_encode(random_bytes(32)));echo("\n");'`
 
-And finally edit `{{your-SuiteCRM-root}}/Api/Core/Config/ApiConfig.php` and find `const OAUTH2_ENCRYPTION_KEY` and update its value using the key generated in the former step.
+.
