@@ -28,6 +28,8 @@ An example of .htaccess correct order is:
 ```
 .
 
+## Fcgid
+
 Additionally you might need to add your virtualhost configuration file so that HTTP_AUTHORIZATION header is actually passed to Suitecrm. After a DirectoryIndex line inside your usually https VirtualHost stanza you should add these lines:
 ```
 <IfModule mod_fcgid.c>
@@ -38,6 +40,16 @@ FcgidPassHeader     Authorization
 In order to apply these changes you might need to reload or even restart apache2.
 .
 
+## FPM
 
+Edit your Apache virtualhost file and below each one of the `DirectoryIndex` lines we add:
+
+```
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+```
+
+and reload apache2.
+
+## .htaccess
 
 Obviously for the changes above to be applied you might need to setup your virtualhost configuration so that it reads .htaccess files.
