@@ -1,4 +1,4 @@
-How to use the Suitecrm API v2.
+How to use the Suitecrm API v8.
 
 Use-cases:
 
